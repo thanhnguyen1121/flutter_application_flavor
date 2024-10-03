@@ -30,7 +30,12 @@ class _SignInPageState extends State<SignInPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.appBackgroundColor,
+      backgroundColor: AppColors.inputHintColor,
+      appBar: AppBar(
+        title: const Text("App bar"),
+        centerTitle: false,
+        backgroundColor: AppColors.focusInputColor,
+      ),
       body: isLoading
           ? const Align(
               alignment: Alignment.center,
